@@ -1,0 +1,971 @@
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <!-- This is a simple example template that you can edit to create your own custom templates -->
+
+    <!--[if gte mso 15]>
+    <xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="x-apple-disable-message-reformatting"> -->
+    <title>King Pong</title> 
+    
+<style type="text/css">
+		p{
+			margin:5px 0;
+			padding:0;
+		}
+		table{
+			border-collapse:collapse;
+		}
+		h1,h2,h3,h4,h5,h6{
+			display:block;
+			margin:0;
+			padding:0;
+		}
+		img,a img{
+			border:0;
+			height:auto;
+			outline:none;
+			text-decoration:none;
+		}
+		body,#bodyTable,#bodyCell{
+			height:100%;
+			margin:0;
+			padding:0;
+			width:100%;
+		}
+		#outlook a{
+			padding:0;
+		}
+		img{
+			-ms-interpolation-mode:bicubic;
+		}
+		table{
+			mso-table-lspace:0pt;
+			mso-table-rspace:0pt;
+		}
+		.ReadMsgBody{
+			width:100%;
+		}
+		.ExternalClass{
+			width:100%;
+		}
+		p,a,li,td,blockquote{
+			mso-line-height-rule:exactly;
+		}
+		a[href^=tel],a[href^=sms]{
+			color:inherit;
+			cursor:default;
+			text-decoration:none;
+		}
+		p,a,li,td,body,table,blockquote{
+			-ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%;
+		}
+		.ExternalClass,.ExternalClass p,.ExternalClass td,.ExternalClass div,.ExternalClass span,.ExternalClass font{
+			line-height:100%;
+		}
+		a[x-apple-data-detectors]{
+			color:inherit !important;
+			text-decoration:none !important;
+			font-size:inherit !important;
+			font-family:inherit !important;
+			font-weight:inherit !important;
+			line-height:inherit !important;
+		}
+		#bodyCell{
+			padding:9px;
+		}
+		.templateImage{
+			height:auto;
+			max-width:564px;
+		}
+		.templateContainer{
+			max-width:600px !important;
+		}
+		#templatePreheader{
+			padding-right:9px;
+			padding-left:9px;
+		}
+		#templatePreheader .columnContainer td{
+			padding:0 9px;
+		}
+		#footerContent{
+			padding-top:27px;
+			padding-bottom:18px;
+		}
+		#templateHeader,#templateBody,#templateFooter{
+			padding-right:18px;
+			padding-left:18px;
+		}
+	/*
+	@tab Page
+	@section Background Style
+	*/
+		body,#bodyTable{
+			background-color:#FAFAFA;
+		}
+	/*
+	@tab Page
+	@section Email Border
+	*/
+		.templateContainer{
+			border:0;
+		}
+	/*
+	@tab Page
+	@section Heading 1
+	*/
+		h1{
+			color:#222222;
+			font-family:Helvetica;
+			font-size:40px;
+			font-style:normal;
+			font-weight:bold;
+			line-height:150%;
+			letter-spacing:normal;
+			text-align:left;
+		}
+	/*
+	@tab Page
+	@section Heading 2
+	*/
+		h2{
+			color:#222222;
+			font-family:Helvetica;
+			font-size:28px;
+			font-style:normal;
+			font-weight:bold;
+			line-height:150%;
+			letter-spacing:normal;
+			text-align:left;
+		}
+	/*
+	@tab Page
+	@section Heading 3
+	*/
+		h3{
+			color:#444444;
+			font-family:Helvetica;
+			font-size:22px;
+			font-style:normal;
+			font-weight:bold;
+			line-height:150%;
+			letter-spacing:normal;
+			text-align:left;
+		}
+	/*
+	@tab Page
+	@section Heading 4
+	*/
+		h4{
+			color:#999999;
+			font-family:Georgia;
+			font-size:20px;
+			font-style:italic;
+			font-weight:normal;
+			line-height:150%;
+			letter-spacing:normal;
+			text-align:left;
+		}
+	/*
+	@tab Preheader
+	@section Preheader Style
+	*/
+		#templatePreheader{
+			background-color:#FAFAFA;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:9px;
+			padding-bottom:9px;
+		}
+	/*
+	@tab Preheader
+	@section Preheader Text
+	*/
+		#templatePreheader,#templatePreheader p{
+			color:#656565;
+			font-family:Helvetica;
+			font-size:12px;
+			line-height:150%;
+			text-align:left;
+		}
+	/*
+	@tab Preheader
+	@section Preheader Link
+	*/
+		#templatePreheader a,#templatePreheader p a{
+			color:#656565;
+			font-weight:normal;
+			text-decoration:underline;
+		}
+	/*
+	@tab Header
+	@section Header Style
+	*/
+		#templateHeader{
+			background-color:#FFFFFF;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:18px;
+			padding-bottom:0;
+		}
+	/*
+	@tab Header
+	@section Header Text
+	*/
+		#templateHeader,#templateHeader p{
+			color:#606060;
+			font-family:Helvetica;
+			font-size:16px;
+			line-height:150%;
+			text-align:left;
+		}
+	/*
+	@tab Header
+	@section Header Link
+	*/
+		#templateHeader a,#templateHeader p a{
+			color:#237A91;
+			font-weight:normal;
+			text-decoration:underline;
+		}
+	/*
+	@tab Body
+	@section Body Style
+	*/
+		#templateBody{
+			background-color:#FFFFFF;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:2px solid #EAEAEA;
+			padding-top:0;
+			padding-bottom:9px;
+		}
+	/*
+	@tab Body
+	@section Body Text
+	*/
+		#templateBody,#templateBody p{
+			color:#606060;
+			font-family:Helvetica;
+			font-size:16px;
+			line-height:150%;
+			text-align:center;
+		}
+	/*
+	@tab Body
+	@section Body Link
+	*/
+		#templateBody a,#templateBody p a{
+			color:#237A91;
+			font-weight:normal;
+			text-decoration:underline;
+		}
+	/*
+	@tab Footer
+	@section Footer Style
+	*/
+		#templateFooter{
+			background-color:#FAFAFA;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:36px;
+			padding-bottom:9px;
+		}
+        .copyrightDiv{
+        width: 100%;
+        padding-top: 30px;
+        display: block;
+    }
+	/*
+	@tab Footer
+	@section Social Bar Style
+	*/
+		#socialBar{
+			background-color:#333333;
+			border:0;
+			padding:18px;
+		}
+	/*
+	@tab Footer
+	@section Social Bar Text
+	*/
+		#socialBar,#socialBar p{
+			color:#FFFFFF;
+			font-family:Helvetica;
+			font-size:12px;
+			line-height:150%;
+			text-align:center;
+		}
+	/*
+	@tab Footer
+	@section Social Bar Link
+	*/
+		#socialBar a,#socialBar p a{
+			color:#FFFFFF;
+			font-weight:normal;
+			text-decoration:underline;
+		}
+	/*
+	@tab Footer
+	@section Footer Text
+	*/
+		#footerContent,#footerContent p{
+			color:#656565;
+			font-family:Helvetica;
+			font-size:12px;
+			line-height:150%;
+			text-align:center;
+		}
+	/*
+	@tab Footer
+	@section Footer Link
+	*/
+		#footerContent a,#footerContent p a{
+			color:#656565;
+			font-weight:normal;
+			text-decoration:underline;
+		}
+	/*
+	@tab Footer
+	@section Utility Bar Style
+	*/
+		#utilityBar{
+			background-color:#FAFAFA;
+			border:0;
+			padding-top:9px;
+			padding-bottom:9px;
+		}
+	/*
+	@tab Footer
+	@section Utility Bar Text
+	*/
+		#utilityBar,#utilityBar p{
+			color:#656565;
+			font-family:Helvetica;
+			font-size:12px;
+			line-height:150%;
+			text-align:center;
+		}
+	/*
+	@tab Footer
+	@section Utility Bar Link
+	*/
+		#utilityBar a,#utilityBar p a{
+			color:#656565;
+			font-weight:normal;
+			text-decoration:underline;
+		}
+	@media only screen and (max-width: 480px){
+		body,table,td,p,a,li,blockquote{
+			-webkit-text-size-adjust:none !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		body{
+			width:100% !important;
+			min-width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.templateImage{
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.columnContainer{
+			max-width:100% !important;
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mobileHide{
+			display:none;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.utilityLink{
+			display:block;
+			padding:9px 0;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Heading 1
+	*/
+		h1{
+			font-size:22px !important;
+			line-height:175% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Heading 2
+	*/
+		h2{
+			font-size:20px !important;
+			line-height:175% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Heading 3
+	*/
+		h3{
+			font-size:18px !important;
+			line-height:175% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Heading 4
+	*/
+		h4{
+			font-size:16px !important;
+			line-height:175% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Preheader Visibility
+	*/
+		#templatePreheader{
+			display:block !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Preheader Text
+	*/
+		#templatePreheader,#templatePreheader p{
+			font-size:14px !important;
+			line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Header Text
+	*/
+		#templateHeader,#templateHeader p{
+			font-size:16px !important;
+			line-height:150% !important;
+		}
+		/* #templatePreheader,#templatePreheader p{
+			font-size:16px !important;
+			line-height:150% !important;
+		} */
+
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Body Text
+	*/
+		#templateBody,#templateBody p{
+			font-size:16px !important;
+			line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Footer Text
+	*/
+		#templateFooter,#templateFooter p{
+			font-size:14px !important;
+			line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Social Bar Text
+	*/
+		#socialBar,#socialBar p{
+			font-size:14px !important;
+			line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Utility Bar Text
+	*/
+		#utilityBar,#utilityBar p{
+			font-size:14px !important;
+			line-height:150% !important;
+		}
+
+}</style></head>
+
+<body>
+    <center>
+        <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+            <tr>
+                <td align="center" valign="top" id="bodyCell">
+                    <!-- BEGIN TEMPLATE // -->
+                    <!--[if gte mso 9]>
+                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
+                    <tr>
+                    <td align="center" valign="top" width="600" style="width:600px;">
+					<![endif]-->
+					<table align="center" border="0" cellpadding="10" cellspacing="0">
+						<tr>
+							<td>
+								<p>Templates:</p>
+							</td>
+							<td>
+								<a href="./index.html"><p>1</p></a>
+							</td>
+							<td>
+								<a href="./company-journey.html"><p>2</p></a>
+							</td>
+							<td>
+								<a href="./company-news.html"><p>3</p></a>
+							</td>
+							<td>
+								<a href="./fathers-day-giveaway.html"><p>4</p></a>
+							</td>
+							<td>
+								<a href="./music-event.html"><p>5</p></a>
+							</td>
+							<td>
+								<a href="./mystery-flash-sale.html"><p>6</p></a>
+							</td>
+							<td>
+								<a href="./shop-his-and-hers.html"><p>7</p></a>
+							</td>
+							<td>
+								<a href="./store-reopening.html"><p>8</p></a>
+							</td>
+							<td>
+								<a href="./thank-you-signup.html"><p>9</p></a>
+							</td>
+							<td>
+								<a href="./top-ten-blogs.html"><p>10</p></a>
+							</td>
+							<td>
+								<a href="./valentines-day-customer.html"><p>11</p></a>
+							</td>
+							<td>
+								<a href="./what-do-you-think.html"><p>12</p></a>
+							</td>
+						</tr>
+					</table>
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
+						<!-- BEGIN PREHEADER // -->
+						
+
+						<!-- <tr>
+							<td style="padding-right: 18px; padding-left: 18px;">
+								<table border="0" cellpadding="0" cellspacing="0" width="100%"> -->
+                        <tr>
+                            <td valign="top" id="templatePreheader">
+
+                                <!-- BEGIN MODULE: STANDARD PREHEADER // -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td valign="top">
+                                            <!--[if mso]>
+                                            <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+                                            <tr>
+                                            <td valign="top" width="384" style="width:384px;">
+                                            <![endif]-->
+                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:384px;" width="100%" class="columnContainer">
+                                                <tr>
+                                                    <td valign="top">
+                                                        <div>
+                                                            <p>Use this area to offer a short preview of your email's content.</p>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!--[if mso]>
+                                            </td>
+                                            <td valign="top" width="180" style="width:180px;">
+                                            <![endif]-->
+                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:180px;" width="100%" class="columnContainer">
+                                                <tr>
+                                                    <td valign="top">
+                                                        <div mc:edit="preheader_rightcol_content">
+                                                            <p><a href="*|ARCHIVE|*" target="_blank">View email in your browser</a></p>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!--[if mso]>
+                                            </td>
+                                            </tr>
+                                            </table>
+                                            <![endif]-->
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- // END MODULE: STANDARD PREHEADER -->
+
+                            </td>
+                        </tr>
+                        <!-- // END PREHEADER -->
+                        <!-- BEGIN HEADER // -->
+                        <tr>
+                            <td style="border-bottom: 3px solid darkgray; padding-bottom: 30px;" valign="top" id="templateHeader">
+								<table border="0" cellpadding="0" cellspacing="0" width="100%">
+									<tr>
+										
+										<td valign="top" align="center">
+											<!-- BEGIN MODULE: HEADER IMAGE // -->
+											<img width="100" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="./images/TemplateLogo-no-bkgd.png" alt="Company Logo"/>
+											<!-- // END MODULE: HEADER IMAGE -->
+										</td>
+									</tr>
+
+									<tr>
+										<td valign="top" align="center">
+                                                
+											<p style="text-align: center; font-size: 35px; font-weight: bold; line-height:24px; mso-line-height-alt:exactly; margin: 40px 0px 0px 0px;">FATHER'S DAY</p>
+											<p style="text-align: center; font-size: 48px; font-weight: bold; line-height:24px; mso-line-height-alt:exactly; margin: 40px 0px 0px 0px;">GIVEAWAY</p>
+											<p style="text-align: center; font-size: 14px; font-style: italic; line-height:24px; mso-line-height-alt:exactly; margin: 40px 0px 0px 0px;">Sign up for your chance to win. Winner chosen October 10.</p>
+										
+										</td>		
+									</tr>
+								</table>
+
+                                
+
+							</td>
+							
+                        </tr>
+						<!-- // END HEADER -->
+						<tr>
+                            <td valign="top" id="templateBody">
+
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+            
+                                    <tr>
+                                        <td>
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size:0pt; line-height:0pt; text-align:center; width:100%; min-width:100%">
+                                                <tr>
+                                                    <td height="10" class="spacer" style="font-size:0pt; line-height:0pt; text-align:center; width:100%; min-width:100%">&amp;nbsp;</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+									</tr>
+									    
+                                </table>
+                               
+                            </td>
+                        </tr>
+						<!-- BEGIN BODY 1// -->
+						
+									<tr>
+										<td style="border-top: 3px solid darkgray;" valign="top" id="templateBody">
+
+											<!-- BEGIN MODULE: BODY CONTENT // -->
+											<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+						
+												<tr>
+													<td>
+														<table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size:0pt; line-height:0pt; text-align:center; width:100%; min-width:100%">
+															<tr>
+																<td height="10" class="spacer" style="font-size:0pt; line-height:0pt; text-align:center; width:100%; min-width:100%">&amp;nbsp;</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													
+													<td valign="top" align="left" height="200" style="padding-right: 20px;  border-right: 3px solid darkgray;">
+														<p style=" text-align: left; font-size: 14px; font-weight: bold; line-height:24px; mso-line-height-alt:exactly; margin: 0px 0px 0px 0px;">2 luggage tags</p>
+														<p style="text-align: left; font-size: 26px; font-weight: lighter; line-height:26px; mso-line-height-alt:exactly; margin: 0px 0px 5px 0px;">$<span style="font-size: 34px; font-weight: normal; line-height:34px;">100</span></p>
+														
+																	<img class="templateImage" width="140" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="./images/LuggageTag.png" alt="Company Logo"/>
+																
+
+														
+														
+														<p style="color: lightgray; text-align: left; font-size: 64px; font-weight: bold; line-height:64px; mso-line-height-alt:exactly; margin: 5px 0px 0px 0px;">TUMI</p>
+													</td>
+
+													<td valign="top" align="center" height="200"  style="padding-right: 0px; padding-left: 20px;">
+														<table border="0" cellspacing="0" cellpadding="0">
+															<tr>
+																<td valign="top" align="left">
+																	<p style="color: lightgray; text-align: right; font-size: 40px; font-weight: bold; line-height:40px; mso-line-height-alt:exactly; margin: 10px 0px 0px 0px;">GOOD</p>
+																	<p style="color: lightgray; text-align: right; font-size: 40px; font-weight: bold; line-height:40px; mso-line-height-alt:exactly; margin: 0px 0px 0px 0px;">EARTH</p>
+																	<p style="text-align: right; font-size: 26px; font-weight: lighter; line-height:26px; mso-line-height-alt:exactly; margin: 20px 0px 0px 0px;">$<span style="font-size: 34px; font-weight: normal; line-height:34px;">50</span></p>
+																	<p style="text-align: right; font-size: 14px; font-weight: bold; line-height:24px; mso-line-height-alt:exactly; margin: 0px 0px 0px 0px;">Gift Card</p>
+
+																</td>
+																<td valign="bottom" align="right" style="padding-right: 20px; padding-left: 20px;">
+																	<img class="templateImage" width="60" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="./images/Bottle.png" alt="Company Logo"/>
+																</td>
+															</tr>
+														</table>
+														
+													</td>
+
+													<td valign="top" align="right" height="200"  style="padding-left: 20px; border-left: 3px solid darkgray;">
+														<table border="0" cellspacing="0" cellpadding="0">
+															<tr>
+																<td valign="top">
+																	<p style="text-align: left; font-size: 14px; font-weight: bold; line-height:24px; mso-line-height-alt:exactly; margin: 0px 0px 0px 0px;">Skincare Products</p>
+																	<p style="color: lightgray; text-align: left; font-size: 38px; font-weight: bold; line-height:38px; mso-line-height-alt:exactly; margin: 5px 0px 0px 0px;">BLUE</p>
+																	<p style="color: lightgray; text-align: left; font-size: 38px; font-weight: bold; line-height:38px; mso-line-height-alt:exactly; margin: 0px 0px 0px 0px;">MERCURY</p>
+																	
+																</td>
+																
+															</tr>
+															<tr>
+															
+																<td valign="top" style="padding-top: 20px;">
+																	<table border="0" cellspacing="0" cellpadding="0">
+																		<tr>
+																			<td valign="top" align="left">
+																				<p style="text-align: left; font-size: 26px; font-weight: lighter; line-height:26px; mso-line-height-alt:exactly; margin: 0px 0px 0px 0px;">$<span style="font-size: 34px; font-weight: normal; line-height:34px;">78</span></p>
+																	
+																			</td>
+																			<td valign="top" align="right">
+																				<img class="templateImage" width="140" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="./images/Skincare.png" alt="Company Logo"/>
+																			</td>
+																		</tr>
+																	</table>
+																	
+																</td>
+															</tr>
+														</table>
+														
+														
+													</td>
+
+												</tr>
+												
+														
+											</table>
+											<!-- // END MODULE: BODY 1 CONTENT -->
+
+										</td>
+									</tr>
+									
+									<!-- // END BODY 1 -->
+									<!-- BEGIN BODY 2// -->
+									<tr>
+										<td style="border-top: 3px solid darkgray;" valign="top" id="templateBody">
+
+											<!-- BEGIN MODULE: BODY CONTENT // -->
+											<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+						
+												<tr>
+													<td>
+														<table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size:0pt; line-height:0pt; text-align:center; width:100%; min-width:100%">
+															<tr>
+																<td height="10" class="spacer" style="font-size:0pt; line-height:0pt; text-align:center; width:100%; min-width:100%">&amp;nbsp;</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td valign="top" align="left" height="100">
+														<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+						
+															<tr>
+																<td valign="top" align="left">
+																	<p style="color: lightgray; text-align: left; font-size: 44px; font-weight: bold; line-height:44px; mso-line-height-alt:exactly; margin: 10px 0px 0px 0px;">TRAIL</p>
+																	<p style="color: lightgray; text-align: left; font-size: 44px; font-weight: bold; line-height:44px; mso-line-height-alt:exactly; margin: 5px 0px 0px 0px;">MARK</p>
+																	<p style=" text-align: left; font-size: 14px; font-weight: bold; line-height:24px; mso-line-height-alt:exactly; margin: 20px 0px 0px 0px;">Patagonia backpack</p>
+																	<p style="text-align: left; font-size: 26px; font-weight: lighter; line-height:26px; mso-line-height-alt:exactly; margin: 0px 0px 0px 0px;">$<span style="font-size: 34px; font-weight: normal; line-height:34px;">100</span></p>
+																</td>
+																<td valign="top" align="right" style="padding-right: 20px;">
+
+																	<img class="templateImage" width="140" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="./images/Backpack.png" alt="Company Logo"/>
+													
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td valign="top" align="right" height="100">
+														<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+						
+															<tr>
+																<td valign="top" align="left" style="padding-left: 20px; border-left: 3px solid darkgray;">
+																	<p style="color: lightgray; text-align: right; font-size: 46px; font-weight: bold; line-height:46px; mso-line-height-alt:exactly; margin: 40px 0px 0px 0px;">TWILL</p>
+																	<p style="text-align: right; font-size: 26px; font-weight: lighter; line-height:26px; mso-line-height-alt:exactly; margin: 20px 0px 0px 0px;">$<span style="font-size: 34px; font-weight: normal; line-height:34px;">85</span></p>
+																	<p style=" text-align: right; font-size: 14px; font-weight: bold; line-height:24px; mso-line-height-alt:exactly; margin: 0px 0px 0px 0px;">Peter Millar Polo</p>
+																</td>
+																<td valign="top" align="right">
+
+																	<img class="templateImage" width="140" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="./images/Side-T-Shirt.png" alt="Company Logo"/>
+													
+																</td>
+															</tr>
+														</table>
+													</td>
+
+												</tr>
+												
+														
+											</table>
+											<!-- // END MODULE: BODY 2 CONTENT -->
+
+										</td>
+									</tr>
+									
+									<!-- // END BODY 2-->
+									<!-- BEGIN BODY 3// -->
+									<tr>
+										<td style="border-top: 3px solid darkgray;" valign="top" id="templateBody">
+
+											<!-- BEGIN MODULE: BODY CONTENT // -->
+											<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+						
+												<tr>
+													<td>
+														<table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size:0pt; line-height:0pt; text-align:center; width:100%; min-width:100%">
+															<tr>
+																<td height="10" class="spacer" style="font-size:0pt; line-height:0pt; text-align:center; width:100%; min-width:100%">&amp;nbsp;</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td valign="top" align="left" height="150" style="padding-right: 20px;">
+														<table align="center" border="0" cellpadding="0" cellspacing="0">
+						
+															<tr>
+																<td valign="top" width="100%">
+																	<p style="color: lightgray; text-align: left; font-size: 38px; font-weight: bold; line-height:38px; mso-line-height-alt:exactly; margin: 10px 0px 0px 0px;">HAMMERMADE</p>
+																	
+																</td>
+															</tr>
+														</table>
+														<table align="center" border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																
+																<td valign="top" style="padding-top: 20px;">
+
+																	<img width="170" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="./images/Wallet.png" alt="Company Logo"/>
+													
+																</td>
+																<td valign="top">
+																	<p style=" text-align: right; font-size: 14px; font-weight: bold; line-height:24px; mso-line-height-alt:exactly; margin: 20px 0px 0px 0px;">Money-clip card holder</p>
+																	<p style="text-align: right; font-size: 26px; font-weight: lighter; line-height:26px; mso-line-height-alt:exactly; margin: 0px 0px 0px 0px;">$<span style="font-size: 34px; font-weight: normal; line-height:34px;">50</span></p>
+																</td>
+																
+															</tr>
+														</table>
+													</td>
+													<td valign="top" align="right" height="150" style="padding-left: 20px; border-left: 3px solid darkgray;">
+														<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+						
+															<tr>
+																<td valign="top" align="left">
+																	<img class="templateImage" width="200" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="./images/BottleOpener.png" alt="Company Logo"/>
+																	<p style="color: lightgray; text-align: right; font-size: 38px; font-weight: bold; line-height:38px; mso-line-height-alt:exactly; margin: 10px 20px 0px 0px;">ALLEN EDMONDS</p>
+																	
+													
+																</td>
+																<td valign="top" align="right" style="padding-left: 0px;">
+																	
+
+																	<p style="text-align: right; font-size: 26px; font-weight: lighter; line-height:26px; mso-line-height-alt:exactly; margin: 20px 0px 0px 0px;">$<span style="font-size: 34px; font-weight: normal; line-height:34px;">100</span></p>
+																	<p style=" text-align: right; font-size: 14px; font-weight: bold; line-height:24px; mso-line-height-alt:exactly; margin: 0px 0px 0px 0px;">Bottle opener made from MN Twins bat</p>
+																</td>
+																
+															</tr>
+														</table>
+													</td>
+
+												</tr>
+												
+														
+											</table>
+											<!-- // END MODULE: BODY 3 CONTENT -->
+
+										</td>
+									</tr>
+								<!-- </table>
+							</td>
+						</tr> -->
+						<!-- // END BODY 3-->
+                        <!-- BEGIN FOOTER // -->
+                        <tr>
+                            <td valign="top" id="templateFooter">
+
+                                <!-- BEGIN MODULE: STANDARD FOOTER // -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td valign="top" id="socialBar">
+                                            <div mc:edit="social_bar">
+                                                <a href="*|TWITTER:PROFILEURL|*" class="utilityLink">Follow on Twitter</a><span class="mobileHide"> &nbsp; | &nbsp; </span><a href="*|FACEBOOK:PROFILEURL|*" class="utilityLink">Friend on Facebook</a>
+                                                <span class="mobileHide"> &nbsp; | &nbsp; </span><a href="*|FORWARD|*" class="utilityLink">Forward to a Friend</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="middle" class="copyrightDiv" align="center">
+                                            <em class="copyrightTop">Copyright &copy; 2021 Your Company LLC, All rights reserved.</em>
+                                            <p class="copyrightMiddle"><strong>Our mailing address is:</strong></p>
+                                            <p class="copyrightBottom">2800 Company Dr. Chicago, IL 60657</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" id="utilityBar">
+                                            <div mc:edit="utility_bar">
+                                                <a href="*|UNSUB|*" class="utilityLink">unsubscribe from this list</a><span class="mobileHide"> | </span><a href="*|UPDATE_PROFILE|*" class="utilityLink">update subscription preferences</a>
+                                                <!-- *|IFNOT:ARCHIVE_PAGE|* --><span class="mobileHide"> | </span><a href="*|ARCHIVE|*" class="utilityLink">view email in browser</a>
+                                                <!-- *|END:IF|* -->
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- // BEGIN MODULE: STANDARD FOOTER -->
+
+                            </td>
+                        </tr>
+                        <!-- // END FOOTER -->
+                    </table>
+                    <!--[if gte mso 9]>
+                    </td>
+                    </tr>
+                    </table>
+                    <![endif]-->
+                    <!-- // END TEMPLATE -->
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>
