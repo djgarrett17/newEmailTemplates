@@ -418,6 +418,11 @@
 		}
 
 }	@media only screen and (max-width: 480px){
+		.mobileShow{
+			display:block;
+		}
+
+}	@media only screen and (max-width: 480px){
 		.utilityLink{
 			display:block;
 			padding:9px 0;
@@ -488,7 +493,7 @@
 	@section Header Text
 	*/
 		#templateHeader,#templateHeader p{
-			font-size:16px !important;
+			/* font-size:16px !important; */
 			line-height:150% !important;
 		}
 
@@ -498,7 +503,7 @@
 	@section Body Text
 	*/
 		#templateBody,#templateBody p{
-			font-size:16px !important;
+			/* font-size:16px !important; */
 			line-height:150% !important;
 		}
 
@@ -674,12 +679,23 @@
 											</table>
 										</td>
 										<td width="45%">
-											<table border="0" cellpadding="0" cellspacing="0" width="100%">
+											<table class="mobileHide" border="0" cellpadding="0" cellspacing="0" width="100%">
 												<tr>
 													<td align="right" valign="top" width="100%">
 														<img width="240" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="./images/chair-and-plant.jpg" alt="Company Logo"/>
 														<img width="240" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="./images/chairs-and-table.jpg" alt="Company Logo"/>
 														<img width="240" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="./images/chair-and-basket.jpg" alt="Company Logo"/>
+													</td>
+												</tr>
+
+											</table>
+											<table class="mobileShow" style="display: none;" border="0" cellpadding="0" cellspacing="0" width="100%">
+												<tr>
+													<td align="right" valign="top" width="100%">
+														<img width="120" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="./images/chair-and-plant.jpg" alt="Company Logo"/>
+														<img width="120" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="./images/chairs-and-table.jpg" alt="Company Logo"/>
+														<img width="120" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="./images/chair-and-skateboard.jpg" alt="Company Logo"/>
+														<img width="120" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="./images/chair-and-basket.jpg" alt="Company Logo"/>
 													</td>
 												</tr>
 
