@@ -21,7 +21,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
 	<!-- <meta name="x-apple-disable-message-reformatting"> -->
 	
-    <title>Top 3 Products</title>
+    <title>Order Confirmation</title>
     
 <style type="text/css"> 
 		p{
@@ -104,7 +104,7 @@
 			padding-top:27px;
 			padding-bottom:18px;
 		}
-		#templateBody,#templateFooter{
+		#templateFooter{
 			padding-right:18px;
 			padding-left:18px;
 		}
@@ -269,7 +269,6 @@
 			border-top:0;
 			border-bottom:2px solid #EAEAEA;
 			padding-top:0;
-			padding-bottom:9px;
 		}
 	/*
 	@tab Body
@@ -423,6 +422,32 @@
 			display:block !important;
 		}
 
+}	@media only screen and (max-width: 440px){
+		.less-padding{
+			padding: 40px 20px 40px 20px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.smaller-width{
+			max-width: 80px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.smallest-width{
+			max-width: 50px !important;
+		}
+
+}	@media only screen and (max-width: 380px){
+		.small-font{
+			font-size: 10px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.smaller-font{
+			font-size: 10px !important;
+			line-height: 20px !important;
+		}
+
 }	@media only screen and (max-width: 480px){
 		.mobileMedium{
 			font-size: 16px;
@@ -434,13 +459,17 @@
 		}
 
 }	@media only screen and (max-width: 480px){
-		.mobileLarger{
-			font-size: 24px;
+		.mobileXLarge{
+			font-size: 28px;
 		}
 
 }	@media only screen and (max-width: 480px){
-		.mobileXLarge{
-			font-size: 28px;
+	/*
+	@tab Mobile Styles
+	@section Heading 4
+	*/
+		.large-font-button{
+			font-size:12px !important;
 		}
 
 }	@media only screen and (max-width: 480px){
@@ -523,7 +552,7 @@
 	
 		#templateBody,#templateBody p{
 			/* font-size:16px !important; */
-			line-height:130% !important;
+			/* line-height:130% !important; */
 		}
 
 }	
@@ -676,12 +705,12 @@
                         <!-- BEGIN HEADER // -->
                         <tr>
                             <td valign="top" id="templateHeader">
-								<table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: black;">
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: rgb(12, 12, 12);">
 									<tr>
 										
-										<td align="center" style="padding-top: 15px; padding-bottom: 15px;">
+										<td align="left" style="padding: 16px 18px">
 											
-											<p class="mobileLarge" style="text-align: center; color: rgb(49, 175, 163); font-size: 30px; line-height: 30px; font-family: 'Open Sans', sans-serif; font-weight: 300; margin: 0;">LOGO</p>
+											<img width="120" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="https://mcusercontent.com/bdd1fa2695abb33207f964b14/images/152ee9f0-4e4f-efad-8162-0834ce088b0a.png" alt="Logo"/>
 										</td>
 												
 									</tr>
@@ -697,176 +726,74 @@
                             <td valign="top" id="templateBody">
 
                                 <!-- BEGIN MODULE: BODY CONTENT // -->
-                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tr>
-                                        <td valign="top">
-                                           
-												<p style="color: rgb(15, 15, 15); font-size: 18px; line-height:24px; mso-line-height-alt:exactly; margin-bottom: 5px; margin-top: 45px;">Our Top 3 Favorite Products to Shop at</p>
-												<p class="mobileLarger" style="color: rgb(15, 15, 15); font-size: 58px; font-weight: bold; line-height:64px; mso-line-height-alt:exactly; margin-bottom: 30px; margin-top: 0px;">HIZERA</p>
-                                          
-                                        </td>
-                                    </tr>
-									<!-- Product 1 -->
-									
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: rgb(238, 238, 238);">
 									<tr>
-										<td valign="top" id="productImageDiv1" style="padding-top: 20px;">
-											<table border="0" cellpadding="0" cellspacing="0" width="100%">
-												<tr>
-													<!--[if !mso]><!-- -->
-													<td align="left">
-														
-														<hr class="mobileHide" style="background-color: rgb(15, 15, 15); border: none; width: 10px; height: 300px;">
-													</td>
-													<!--<![endif]-->
-													<td align="left">
-														
-														<img width="190" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="./images/vintage-classic-shirt.png" alt="Product Image"/>
-														
-													</td>
-													<!-- <td class="mobileShow" align="left" style="display: none;">
-														
-														<img width="120" height="auto" style="display:block; width:120px; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="./images/vintage-classic-shirt.png" alt="Product Image"/>
-														
-													</td> -->
-													<td align="right">
-														<table border="0" cellpadding="0" cellspacing="0" width="100%">
-															<tr>
-																<td valign="top" align="center" height="280" style="border-top: 10px solid rgb(15, 15, 15); border-bottom: 10px solid rgb(15, 15, 15); border-right: 10px solid rgb(15, 15, 15);">
-																	<table border="0" cellpadding="0" cellspacing="0" width="44">
-																		<tr>
-																			<td valign="top" align="center" style="background-color: rgb(15, 15, 15);">
-																				<p style="color: white; font-size: 16px; font-weight: bold; line-height:30px; mso-line-height-alt:exactly; margin-top: 0px; margin-bottom: 0px;">1</p>
-																			</td>
-																		</tr>
-																	</table>
-																	<p style="font-size: 22px; font-weight: bold; line-height:24px; mso-line-height-alt:exactly; margin-top: 30px; width: 80%;">Vintage Classic T-Shirt</p>
-
-																	<p class="mobileHide" style="font-size: 14px; line-height:24px; mso-line-height-alt:exactly; width: 90%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minus vitae ipsam fuga error aliquid saepe, necessitatibus quidem nemo, nesciunt maxime est vel quae vol.</p>
-																	<p class="mobileShow" style="display:none; font-size: 14px; line-height:24px; mso-line-height-alt:exactly; width: 80%;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-																	<p style=" width: 100px; border-left: 2px solid rgba(49, 175, 162, 0.4); border-right: 2px solid rgba(49, 175, 162, 0.4); font-size: 16px; line-height:22px; mso-line-height-alt:exactly; margin-bottom: 25px; margin-top: 20px;"><a href="https://templates.mailchimp.com/" target="_blank" style="color: rgb(49, 175, 163); text-decoration: none; font-weight: bold;">Shop Now</a></p>
-																</td>
-															</tr>
-														</table>
-													
-														
-														
-														
-													
-													</td>		
-												</tr>
-											</table>
-			
+										
+										<td align="center" style="padding-top: 25px; padding-bottom: 30px;">
 											
-			
+											<img width="40" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="https://mcusercontent.com/bdd1fa2695abb33207f964b14/images/6458163b-2d15-f96e-1894-3c988f10b5db.png" alt="Logo"/>
+											<p style="color: rgb(20, 20, 20); font-size: 28px; line-height:60px !important; mso-line-height-alt:exactly; margin-bottom: 2px; margin-top: 2px;">Order Confirmation</p>
+											<p style="color: rgb(20, 20, 20); font-size: 12px; line-height:16px; mso-line-height-alt:exactly; margin-bottom: 2px; margin-top: 10px;">Thank you for your purchase!</p>
+											<p style="width:90%; color: rgb(20, 20, 20); font-size: 12px; font-weight: 400; line-height:20px; mso-line-height-alt:exactly; margin-bottom: 0px; margin-top: 2px;">Please allow <strong>3-5 business days</strong> for your order to arrive</p>
+										</td>
+												
+									</tr>
+								</table>
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: rgb(255, 255, 255);">
+									<tr>
+										
+										<td align="center" style="padding-top: 0px; padding-bottom: 0px;">
+											<hr style="margin-top: 0px; margin-bottom: 0px; border-width: 0; background: #000; color: #000; height:1px; width:100%">
 										</td>
 									</tr>
-
-									<!-- Product 2 -->
-
+								</table>
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: rgb(255, 255, 255);">
 									<tr>
-										<td valign="top" id="productImageDiv1" style="padding-top: 20px;">
+										<td class="less-padding" style="padding: 40px 50px">
 											<table border="0" cellpadding="0" cellspacing="0" width="100%">
 												<tr>
-													<td align="left">
-														<table border="0" cellpadding="0" cellspacing="0" width="100%">
+													<td>
+														<table class="smallest-width" class="smaller-width" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 120px;">
 															<tr>
-																<td valign="top" align="center" height="280" style="border-top: 10px solid rgb(15, 15, 15); border-bottom: 10px solid rgb(15, 15, 15); border-left: 10px solid rgb(15, 15, 15);">
-																	<table border="0" cellpadding="0" cellspacing="0" width="44">
-																		<tr>
-																			<td valign="top" align="center" style="background-color: rgb(15, 15, 15);">
-																				<p style="color: white; font-size: 16px; font-weight: bold; line-height:30px; mso-line-height-alt:exactly; margin-top: 0px; margin-bottom: 0px;">2</p>
-																			</td>
-																		</tr>
-																	</table>
-																	<p style="font-size: 22px; font-weight: bold; line-height:24px; mso-line-height-alt:exactly; margin-top: 30px; width: 80%;">Earth Tone Pants</p>
-
-																	<p class="mobileHide" style="font-size: 14px; line-height:24px; mso-line-height-alt:exactly; width: 90%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minus vitae ipsam fuga error aliquid saepe, necessitatibus quidem nemo, nesciunt maxime est vel quae vol.</p>
-																	<p class="mobileShow" style="display:none; font-size: 14px; line-height:24px; mso-line-height-alt:exactly; width: 80%;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-																	<p style=" width: 100px; border-left: 2px solid rgba(49, 175, 162, 0.4); border-right: 2px solid rgba(49, 175, 162, 0.4); font-size: 16px; line-height:22px; mso-line-height-alt:exactly; margin-bottom: 25px; margin-top: 20px;"><a href="https://templates.mailchimp.com/" target="_blank" style="color: rgb(49, 175, 163); text-decoration: none; font-weight: bold;">Shop Now</a></p>
+																<td align="center">
+																	<img width="100%" height="auto" style="max-width: 100%; display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="https://mcusercontent.com/bdd1fa2695abb33207f964b14/images/f563178f-b111-5cab-e026-2fd49d63e3a0.png" alt="Logo"/>
 																</td>
 															</tr>
 														</table>
-												
 													</td>
-													<td align="right">
-														
-														<img width="190" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="./images/earth-tone-pants.png" alt="Product Image"/>
-														
+													<td>
+														<p class="small-font" style="text-align: left; color: rgb(20, 20, 20); font-size: 12px; line-height:60px; mso-line-height-alt:exactly; margin-bottom: 2px; margin-top: 2px;">OG King Pong Pack</p>
 													</td>
-													<!--[if !mso]><!-- -->
-													<td align="right">
-														
-														<hr class="mobileHide" style="background-color: rgb(15, 15, 15); border: none; width: 10px; height: 300px;">
-													</td>	
-													<!--<![endif]-->	
+													<td width="30">
+														<p class="small-font" style="color: rgb(20, 20, 20); font-size: 12px; line-height:60px; mso-line-height-alt:exactly; margin-bottom: 2px; margin-top: 2px;">1</p>
+													</td>
+													<td width="70">
+														<p class="small-font" style="color: rgb(20, 20, 20); font-size: 12px; line-height:60px; mso-line-height-alt:exactly; margin-bottom: 2px; margin-top: 2px;">$4.99</p>
+													</td>
 												</tr>
 											</table>
-		
 										</td>
 									</tr>
-
-									
-									<!-- Product 3 -->
-
+								</table>
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: rgb(255, 255, 255);">
 									<tr>
-										<td valign="top" id="productImageDiv1" style="padding-top: 20px;">
-											<table border="0" cellpadding="0" cellspacing="0" width="100%">
-												<tr>
-													<!--[if !mso]><!-- -->
-													<td align="left">
-														
-														<hr class="mobileHide" style="background-color: rgb(15, 15, 15); border: none; width: 10px; height: 300px; margin: 0px;">
-													</td>
-													<!--<![endif]-->
-													<td align="left">
-														
-														<img width="190" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="./images/rich-rocky-ring.png" alt="Product Image"/>
-														
-													</td>
-													<td align="right">
-														<table border="0" cellpadding="0" cellspacing="0" width="100%">
-															<tr>
-																<td valign="top" align="center" height="280" style="border-top: 10px solid rgb(15, 15, 15); border-bottom: 10px solid rgb(15, 15, 15); border-right: 10px solid rgb(15, 15, 15);">
-																	<table border="0" cellpadding="0" cellspacing="0" width="44">
-																		<tr>
-																			<td valign="top" align="center" style="background-color: rgb(15, 15, 15);">
-																				<p style="color: white; font-size: 16px; font-weight: bold; line-height:30px; mso-line-height-alt:exactly; margin-top: 0px; margin-bottom: 0px;">3</p>
-																			</td>
-																		</tr>
-																	</table>
-																	<p style="font-size: 22px; font-weight: bold; line-height:24px; mso-line-height-alt:exactly; margin-top: 30px; width: 80%;">Rich And Rocky Ring</p>
-
-																	<p class="mobileHide" style="font-size: 14px; line-height:24px; mso-line-height-alt:exactly; width: 90%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minus vitae ipsam fuga error aliquid saepe, necessitatibus quidem nemo, nesciunt maxime est vel quae vol.</p>
-																	<p class="mobileShow" style="display:none; font-size: 14px; line-height:24px; mso-line-height-alt:exactly; width: 80%;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-																	<p style=" width: 100px; border-left: 2px solid rgba(49, 175, 162, 0.4); border-right: 2px solid rgba(49, 175, 162, 0.4); font-size: 16px; line-height:22px; mso-line-height-alt:exactly; margin-bottom: 25px; margin-top: 20px;"><a href="https://templates.mailchimp.com/" target="_blank" style="color: rgb(49, 175, 163); text-decoration: none; font-weight: bold;">Shop Now</a></p>
-																</td>
-															</tr>
-														</table>
+										
+										<td align="center" style="padding-top: 5px; padding-bottom: 0px;">
+											<hr style="margin-top: 5px; margin-bottom: 0px; border-width: 0; background: #000; color: #000; height:1px; width:100%">
+										</td>
+									</tr>
+								</table>
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: rgb(238, 238, 238);">
+									<tr>
+										
+										<td align="center" style="padding-top: 25px; padding-bottom: 25px;">
+											<p style="width: 90%; color: rgb(20, 20, 20); font-size: 28px; line-height:40px; mso-line-height-alt:exactly; margin-bottom: 5px; margin-top: 2px;">Questions? Comments?</p>
+											<hr class="mobileHide" style="margin-top: 5px; margin-bottom: 5px; border-width: 0; background: #000; color: #000; height:3px; width:15%">
+											<p style="color: rgb(20, 20, 20); font-size: 12px; line-height:16px; mso-line-height-alt:exactly; margin-bottom: 2px; margin-top: 15px;">Email us at <strong>shop@kingpong.co</strong></p>
+										</td>
 												
-													</td>		
-												</tr>
-											</table>
-		
-										</td>
 									</tr>
-									<tr>
-                                        <td>
-                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size:0pt; line-height:0pt; text-align:center; width:100%; min-width:100%">
-                                                <tr>
-                                                    <td height="20" class="spacer" style="font-size:0pt; line-height:0pt; text-align:center; width:100%; min-width:100%">&amp;nbsp;</td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-
-
-
-
-                                    
-                                </table>
+								</table>
                                 <!-- // END MODULE: BODY CONTENT -->
 
                             </td>
