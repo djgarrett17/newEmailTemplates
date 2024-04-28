@@ -302,11 +302,13 @@
 			background-size:cover;
 			border-top:0;
 			border-bottom:0;
-			padding-top:36px;
+			padding-top:10px;
 			padding-bottom:9px;
 		}
         .copyrightDiv{
-        width: 100%;
+			width: 100%;
+		color:#656565;
+		font-size: 14px;
         padding-top: 30px;
 		display: block;
 		font-family: 'Open Sans', sans-serif;
@@ -422,12 +424,43 @@
 			display:block !important;
 		}
 
-}	@media only screen and (max-width: 480px){
-		.smallerWidth{
-			max-width: 130px !important;
+}
+@media only screen and (max-width: 450px){
+		.midMobileShow{
+			display:block !important;
 		}
 
-}	@media only screen and (max-width: 480px){
+}	
+@media only screen and (max-width: 420px){
+		.smallMobileShow{
+			display:block !important;
+		}
+
+}		
+@media only screen and (max-width: 620px){
+		.smallerWidth{
+			max-width: 200px !important;
+		}
+
+}
+@media only screen and (max-width: 480px){
+		.smallerWidth{
+			max-width: 150px !important;
+		}
+
+}
+@media only screen and (max-width: 620px){
+		.midHide{
+			display:none;
+		}
+
+}	@media only screen and (max-width: 620px){
+		.midShow{
+			display:block !important;
+		}
+
+}
+	@media only screen and (max-width: 480px){
 		.smallestWidth{
 			max-width: 30px !important;
 		}
@@ -656,33 +689,7 @@
 													
 												</tr>
 											</table>
-                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:384px;" width="100%" class="columnContainer">
-                                                <tr>
-                                                    <td valign="top">
-                                                        <div>
-                                                            <p>Use this area to offer a short preview of your email's content.</p>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <!--[if mso]>
-                                            </td>
-                                            <td valign="top" width="180" style="width:180px;">
-                                            <![endif]-->
-                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:180px;" width="100%" class="columnContainer">
-                                                <tr>
-                                                    <td valign="top">
-                                                        <div mc:edit="preheader_rightcol_content">
-                                                            <p><a href="*|ARCHIVE|*" target="_blank">View email in your browser</a></p>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <!--[if mso]>
-                                            </td>
-                                            </tr>
-                                            </table>
-                                            <![endif]-->
+                                           
                                         </td>
                                     </tr>
                                 </table>
@@ -733,7 +740,7 @@
 											</table>
 										</td>
 										<td width="45%">
-											<table class="smallerWidth" style="max-width:240px;" border="0" cellpadding="0" cellspacing="0" width="100%">
+											<table style="max-width:280px;" border="0" cellpadding="0" cellspacing="0" width="100%">
 												<tr>
 													<td align="right" valign="top" width="100%">
 														<img width="100%" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="./images/chair-and-plant.jpg" alt="Company Logo"/>
@@ -743,13 +750,38 @@
 												</tr>
 
 											</table>
-											<table class="smallerWidth" style="max-width: 0px;" border="0" cellpadding="0" cellspacing="0" width="100%">
+											<table class="midShow" style="display: none; max-width: 280px;" border="0" cellpadding="0" cellspacing="0" width="100%">
 												<tr>
 													<td align="right" valign="top" width="100%">
 														
 														<img width="100%" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="./images/chair-and-skateboard.jpg" alt="Company Logo"/>
+														
+														
+													</td>
+												</tr>
+
+											</table>
+											<table class="mobileShow" style="display: none; max-width: 280px;" border="0" cellpadding="0" cellspacing="0" width="100%">
+												<tr>
+													<td align="right" valign="top" width="100%">
 														<img width="100%" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="./images/chair-and-plant.jpg" alt="Company Logo"/>
+														
+													</td>
+												</tr>
+
+											</table>
+											<table class="midMobileShow" style="display: none; max-width: 280px;" border="0" cellpadding="0" cellspacing="0" width="100%">
+												<tr>
+													<td align="right" valign="top" width="100%">
 														<img width="100%" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="./images/chairs-and-table.jpg" alt="Company Logo"/>
+														
+													</td>
+												</tr>
+
+											</table>
+											<table class="smallMobileShow" style="display: none; max-width: 280px;" border="0" cellpadding="0" cellspacing="0" width="100%">
+												<tr>
+													<td align="right" valign="top" width="100%">
 														<img width="100%" height="auto" style="display:block; font-size:16px; line-height:24px; mso-line-height-alt:exactly;" src="./images/chair-and-basket.jpg" alt="Company Logo"/>
 														
 													</td>
@@ -848,19 +880,12 @@
 
                                 <!-- BEGIN MODULE: STANDARD FOOTER // -->
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tr>
-                                        <td valign="top" id="socialBar">
-                                            <div mc:edit="social_bar">
-                                                <a href="*|TWITTER:PROFILEURL|*" class="utilityLink">Follow on Twitter</a><span class="mobileHide"> &nbsp; | &nbsp; </span><a href="*|FACEBOOK:PROFILEURL|*" class="utilityLink">Friend on Facebook</a>
-                                                <span class="mobileHide"> &nbsp; | &nbsp; </span><a href="*|FORWARD|*" class="utilityLink">Forward to a Friend</a>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                   
                                     <tr>
                                         <td valign="middle" class="copyrightDiv" align="center">
                                             <em class="copyrightTop">Copyright &copy; 2021 Your Company LLC, All rights reserved.</em>
-                                            <p class="copyrightMiddle"><strong>Our mailing address is:</strong></p>
-                                            <p class="copyrightBottom">2800 Company Dr. Chicago, IL 60657</p>
+                                            <!-- <p class="copyrightMiddle"><strong>Our mailing address is:</strong></p> -->
+                                            <p class="copyrightBottom" style="margin-top: 4px;">2800 Company Dr. Chicago, IL 60657</p>
                                         </td>
                                     </tr>
                                     <tr>
